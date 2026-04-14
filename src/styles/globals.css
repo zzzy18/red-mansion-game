@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+:root {
+  --color-cinnabar: #C41E3A;
+  --color-gold: #D4AF37;
+  --color-paper: #F5F0E6;
+  --color-ink: #1A1A1A;
+  --color-jade: #00A86B;
+  --color-azure: #007BA7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'SimSun', 'SourceHanSerifCN', 'Noto Serif SC', serif;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  line-height: 1.8;
+}
+
+/* 古典风格按钮 */
+@layer components {
+  .btn-classical {
+    @apply px-6 py-3 text-lg font-title rounded-lg border-2 border-cinnabar 
+           bg-paper text-cinnabar hover:bg-cinnabar hover:text-paper
+           transition-all duration-300 cursor-pointer;
+  }
+  
+  .btn-classical-gold {
+    @apply px-6 py-3 text-lg font-title rounded-lg border-2 border-gold 
+           bg-paper text-gold hover:bg-gold hover:text-paper
+           transition-all duration-300 cursor-pointer;
+  }
+  
+  .panel-classical {
+    @apply bg-paper/90 border border-gold/30 rounded-lg shadow-lg
+           backdrop-blur-sm;
+  }
+  
+  .text-box {
+    @apply bg-paper/95 border-l-4 border-cinnabar p-4 rounded-r-lg
+           shadow-md font-body text-ink leading-relaxed;
+  }
+}
+
+/* 选项按钮样式 */
+.choice-button {
+  @apply w-full px-4 py-3 text-center font-body text-lg
+         bg-paper border-2 border-gold/50 rounded-lg
+         hover:border-gold hover:bg-gold/10 hover:shadow-md
+         transition-all duration-200 cursor-pointer;
+}
+
+.choice-button:hover {
+  transform: translateY(-2px);
+}
+
+/* 对话框样式 */
+.dialogue-box {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 230, 0.95) 0%,
+    rgba(245, 240, 230, 0.98) 100%
+  );
+  border-top: 3px solid var(--color-cinnabar);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 角色名称样式 */
+.character-name {
+  @apply font-title text-xl text-cinnabar font-bold;
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* 打字机效果 */
+.typewriter-text {
+  overflow: hidden;
+}
+
+/* 场景背景 */
+.scene-background {
+  @apply absolute inset-0 bg-cover bg-center;
+}
+
+/* 角色立绘 */
+.character-portrait {
+  @apply absolute bottom-0 transition-all duration-500;
+}
+
+.character-portrait.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.character-portrait.left {
+  left: 15%;
+}
+
+.character-portrait.right {
+  right: 15%;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cinnabar);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* 古典边框装饰 */
+.classical-border {
+  position: relative;
+}
+
+.classical-border::before,
+.classical-border::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-gold);
+}
+
+.classical-border::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.classical-border::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+/* 中国风装饰花纹 */
+.chinese-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 20 L20 0 L40 20 L20 40 Z' fill='none' stroke='%23D4AF37' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+/* 云纹装饰 */
+.cloud-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30'%3E%3Cpath d='M0 15 Q10 5 20 15 Q30 25 40 15 Q50 5 60 15' fill='none' stroke='%23D4AF37' stroke-width='1' opacity='0.2'/%3E%3C/svg%3E");
+  background-size: 60px 30px;
+}
+
+/* 场景装饰元素 */
+.scene-decoration {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* 左侧装饰帘幕 */
+.left-curtain {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(
+    to right,
+    rgba(196, 30, 58, 0.08) 0%,
+    transparent 100%
+  );
+}
+
+.left-curtain::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 80px;
+  bottom: 80px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(212, 175, 55, 0.3) 20%,
+    rgba(212, 175, 55, 0.3) 80%,
+    transparent 100%
+  );
+}
+
+/* 右侧装饰帘幕 */
+.right-curtain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(
+    to left,
+    rgba(196, 30, 58, 0.08) 0%,
+    transparent 100%
+  );
+}
+
+.right-curtain::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 80px;
+  bottom: 80px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(212, 175, 55, 0.3) 20%,
+    rgba(212, 175, 55, 0.3) 80%,
+    transparent 100%
+  );
+}
+
+/* 顶部装饰条 */
+.top-decoration-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--color-cinnabar) 15%,
+    var(--color-gold) 50%,
+    var(--color-cinnabar) 85%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+/* 底部装饰条 */
+.bottom-decoration-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--color-cinnabar) 15%,
+    var(--color-gold) 50%,
+    var(--color-cinnabar) 85%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+/* 角落装饰 */
+.corner-decoration {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+}
+
+.corner-decoration.top-left {
+  top: 60px;
+  left: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath d='M0 25 Q0 0 25 0' fill='none' stroke='%23D4AF37' stroke-width='1.5'/%3E%3Ccircle cx='12' cx='12' r='2' fill='%23D4AF37'/%3E%3C/svg%3E");
+}
+
+.corner-decoration.top-right {
+  top: 60px;
+  right: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath d='M50 25 Q50 0 25 0' fill='none' stroke='%23D4AF37' stroke-width='1.5'/%3E%3Ccircle cx='38' cy='12' r='2' fill='%23D4AF37'/%3E%3C/svg%3E");
+}
+
+.corner-decoration.bottom-left {
+  bottom: 220px;
+  left: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath d='M0 25 Q0 50 25 50' fill='none' stroke='%23D4AF37' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='38' r='2' fill='%23D4AF37'/%3E%3C/svg%3E");
+}
+
+.corner-decoration.bottom-right {
+  bottom: 220px;
+  right: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Cpath d='M50 25 Q50 50 25 50' fill='none' stroke='%23D4AF37' stroke-width='1.5'/%3E%3Ccircle cx='38' cy='38' r='2' fill='%23D4AF37'/%3E%3C/svg%3E");
+}
