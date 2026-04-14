@@ -315,6 +315,40 @@ export const chapterSummaries: ChapterSummary[] = [
       { id: 'c5_2', type: 'word', term: '假作真时真亦假', explanation: '太虚幻境对联，点明真假虚实的哲学主题。' },
     ],
   },
+  {
+    chapter: 6,
+    title: '大观园建成',
+    summary: '元春省亲，贾府建造大观园，众姐妹入住，开启美好时光。',
+    keyEvents: ['元春省亲', '建造大观园', '众姐妹入住'],
+    keyPersons: ['贾元春', '林黛玉', '贾宝玉', '薛宝钗'],
+    annotations: [
+      { id: 'c6_1', type: 'word', term: '大观园', explanation: '为元春省亲建造的大型园林，是红楼梦后半部的主要场景。' },
+      { id: 'c6_2', type: 'word', term: '省亲', explanation: '贵妃回家探望父母的礼制活动。' },
+    ],
+  },
+  {
+    chapter: 7,
+    title: '共读西厢',
+    summary: '宝玉与黛玉共读《西厢记》，借书中句子含蓄表白，情感升温。',
+    keyEvents: ['共读西厢记', '含蓄表白'],
+    keyPersons: ['贾宝玉', '林黛玉'],
+    annotations: [
+      { id: 'c7_1', type: 'allusion', term: '西厢记', explanation: '元代王实甫所作爱情戏曲，讲述张生与崔莺莺的故事。' },
+      { id: 'c7_2', type: 'word', term: '多愁多病身，倾国倾城貌', explanation: '《西厢记》中的句子，宝玉用来向黛玉表白。' },
+    ],
+  },
+  {
+    chapter: 8,
+    title: '黛玉葬花',
+    summary: '黛玉独自葬花，吟唱《葬花吟》，预言悲剧命运。宝玉听闻后恸倒，两人情感深化。',
+    keyEvents: ['葬花', '吟唱葬花吟', '宝玉听闻恸倒'],
+    keyPersons: ['林黛玉', '贾宝玉'],
+    annotations: [
+      { id: 'c8_1', type: 'poetry', term: '葬花吟', explanation: '黛玉最著名的诗作，全诗52句，字字泣血。' },
+      { id: 'c8_2', type: 'word', term: '质本洁来还洁去', explanation: '黛玉的人生宣言，宁可洁净地死去，不愿染上世俗污浊。' },
+      { id: 'c8_3', type: 'word', term: '花落人亡两不知', explanation: '《葬花吟》结语，暗示黛玉与宝玉终将阴阳两隔。' },
+    ],
+  },
 ]
 
 // 导出所有注释
