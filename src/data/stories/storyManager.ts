@@ -2,11 +2,13 @@ import { StoryNode, StoryChapter } from '../../types'
 import { chapter1 } from './chapter1'
 import { chapter2 } from './chapter2'
 import { chapter3 } from './chapter3'
+import { chapter4 } from './chapter4'
+import { chapter5 } from './chapter5'
 
 // 剧情管理器
 
 // 所有章节
-export const chapters: StoryChapter[] = [chapter1, chapter2, chapter3]
+export const chapters: StoryChapter[] = [chapter1, chapter2, chapter3, chapter4, chapter5]
 
 // 获取剧情节点
 export function getStoryNode(nodeId: string): StoryNode | undefined {
@@ -113,3 +115,5 @@ export function getChapter(chapterNumber: number): StoryChapter | undefined {
 export { chapter1 } from './chapter1'
 export { chapter2 } from './chapter2'
 export { chapter3 } from './chapter3'
+export { chapter4 } from './chapter4'
+export { chapter5 } from './chapter5'

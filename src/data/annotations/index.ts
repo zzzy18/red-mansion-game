@@ -295,20 +295,24 @@ export const chapterSummaries: ChapterSummary[] = [
   },
   {
     chapter: 4,
-    title: '薄命女偏逢薄命郎 葫芦僧乱判葫芦案',
-    summary: '薛宝钗随母亲入住贾府，贾雨村断案中的情节。',
-    keyEvents: ['薛家进京', '贾雨村断案'],
-    keyPersons: ['薛宝钗', '薛姨妈', '贾雨村'],
-    annotations: [],
+    title: '黛玉进府',
+    summary: '林黛玉初入荣国府，拜见贾母、王熙凤等人物，与贾宝玉初遇，上演经典的摔玉风波。',
+    keyEvents: ['黛玉入府', '初见凤姐', '宝黛初遇', '摔玉风波'],
+    keyPersons: ['林黛玉', '贾宝玉', '王熙凤', '贾母'],
+    annotations: [
+      { id: 'c4_1', type: 'word', term: '步步留心，时时在意', explanation: '黛玉初入贾府时的谨慎心态，因寄人篱下而格外小心。' },
+      { id: 'c4_2', type: 'word', term: '颦颦', explanation: '宝玉为黛玉取的别号，因其眉尖若蹙。' },
+    ],
   },
   {
     chapter: 5,
-    title: '游幻境指迷十二钗 饮仙醪曲演红楼梦',
-    summary: '宝玉梦入太虚幻境，看到金陵十二钗的命运判词和红楼梦曲。',
+    title: '游幻境指迷十二钗',
+    summary: '宝玉梦入太虚幻境，见金陵十二钗命运判词，听红楼梦曲，预示全书人物结局。',
     keyEvents: ['梦入太虚幻境', '见金陵十二钗判词', '听红楼梦曲'],
     keyPersons: ['贾宝玉', '警幻仙子'],
     annotations: [
       { id: 'c5_1', type: 'allusion', term: '金陵十二钗', explanation: '小说中十二位主要女子：林黛玉、薛宝钗、贾元春、贾探春、史湘云、妙玉、贾迎春、贾惜春、王熙凤、贾巧姐、李纨、秦可卿。' },
+      { id: 'c5_2', type: 'word', term: '假作真时真亦假', explanation: '太虚幻境对联，点明真假虚实的哲学主题。' },
     ],
   },
 ]
