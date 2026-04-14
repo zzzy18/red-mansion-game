@@ -7,11 +7,16 @@ import { chapter5 } from './chapter5'
 import { chapter6 } from './chapter6'
 import { chapter7 } from './chapter7'
 import { chapter8 } from './chapter8'
+import { chapter9 } from './chapter9'
+import { chapter10 } from './chapter10'
+import { chapter11 } from './chapter11'
+import { chapter12 } from './chapter12'
+import { chapter13 } from './chapter13'
 
 // 剧情管理器
 
 // 所有章节
-export const chapters: StoryChapter[] = [chapter1, chapter2, chapter3, chapter4, chapter5, chapter6, chapter7, chapter8]
+export const chapters: StoryChapter[] = [chapter1, chapter2, chapter3, chapter4, chapter5, chapter6, chapter7, chapter8, chapter9, chapter10, chapter11, chapter12, chapter13]
 
 // 获取剧情节点
 export function getStoryNode(nodeId: string): StoryNode | undefined {
@@ -123,3 +128,8 @@ export { chapter5 } from './chapter5'
 export { chapter6 } from './chapter6'
 export { chapter7 } from './chapter7'
 export { chapter8 } from './chapter8'
+export { chapter9 } from './chapter9'
+export { chapter10 } from './chapter10'
+export { chapter11 } from './chapter11'
+export { chapter12 } from './chapter12'
+export { chapter13 } from './chapter13'

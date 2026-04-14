@@ -349,6 +349,61 @@ export const chapterSummaries: ChapterSummary[] = [
       { id: 'c8_3', type: 'word', term: '花落人亡两不知', explanation: '《葬花吟》结语，暗示黛玉与宝玉终将阴阳两隔。' },
     ],
   },
+  {
+    chapter: 9,
+    title: '宝玉挨打',
+    summary: '宝玉因与戏子交往、金钏儿之死惹怒贾政，被痛打。黛玉、宝钗探伤，情感深化。',
+    keyEvents: ['惹怒贾政', '痛打宝玉', '黛玉探伤'],
+    keyPersons: ['贾宝玉', '贾政', '林黛玉', '薛宝钗'],
+    annotations: [
+      { id: 'c9_1', type: 'word', term: '戏子', explanation: '古代被视为低贱职业的演员。' },
+      { id: 'c9_2', type: 'word', term: '金钏儿', explanation: '王夫人丫鬟，因宝玉跳井自杀。' },
+    ],
+  },
+  {
+    chapter: 10,
+    title: '海棠诗社',
+    summary: '探春发起海棠诗社，众人吟诗作对，展现才情与性格差异。',
+    keyEvents: ['发起诗社', '咏白海棠', '诗才评比'],
+    keyPersons: ['贾探春', '林黛玉', '薛宝钗', '史湘云'],
+    annotations: [
+      { id: 'c10_1', type: 'word', term: '潇湘妃子', explanation: '黛玉在诗社中的别号。' },
+      { id: 'c10_2', type: 'poetry', term: '偷来梨蕊三分白', explanation: '黛玉咏白海棠诗中的妙句。' },
+    ],
+  },
+  {
+    chapter: 11,
+    title: '联诗悲凉',
+    summary: '中秋夜宴，黛玉与湘云联诗，"冷月葬花魂"预示悲剧命运，繁华逝去。',
+    keyEvents: ['中秋宴席', '联诗赏月', '悲凉渐生'],
+    keyPersons: ['林黛玉', '史湘云', '贾母'],
+    annotations: [
+      { id: 'c11_1', type: 'poetry', term: '冷月葬花魂', explanation: '黛玉联诗中的句子，预示她的悲剧命运。' },
+      { id: 'c11_2', type: 'word', term: '寒塘渡鹤影', explanation: '湘云联诗中的句子，清冷凄凉。' },
+    ],
+  },
+  {
+    chapter: 12,
+    title: '黛玉焚稿',
+    summary: '黛玉得知宝玉娶宝钗后绝望焚稿，临终遗言"宝玉，宝玉，你好……"，气绝身亡。',
+    keyEvents: ['得知婚讯', '焚稿绝望', '黛玉之死'],
+    keyPersons: ['林黛玉', '贾宝玉', '薛宝钗'],
+    annotations: [
+      { id: 'c12_1', type: 'word', term: '焚稿', explanation: '黛玉烧毁诗稿，绝望的极致表现。' },
+      { id: 'c12_2', type: 'word', term: '宝玉，宝玉，你好', explanation: '黛玉临终遗言，有多种解读。' },
+    ],
+  },
+  {
+    chapter: 13,
+    title: '全书结局',
+    summary: '贾府被抄家，众人结局各异。宝玉出家，"白茫茫大地真干净"，全书完结。',
+    keyEvents: ['抄家败落', '众人结局', '宝玉出家'],
+    keyPersons: ['贾宝玉', '王熙凤', '贾政'],
+    annotations: [
+      { id: 'c13_1', type: 'word', term: '白茫茫大地真干净', explanation: '红楼梦终极主题，一切归于虚无。' },
+      { id: 'c13_2', type: 'word', term: '抄家', explanation: '朝廷查封没收家产的惩罚。' },
+    ],
+  },
 ]
 
 // 导出所有注释
