@@ -35,7 +35,7 @@ const EndingScreen: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/assets/images/backgrounds/ending_bg.png")',
+            backgroundImage: 'url("/assets/images/backgrounds/daguanyuan_full.webp")',
           }}
         />
       </div>

@@ -7,8 +7,8 @@ export const xiaoxiangGuan: Scene = {
   fullName: '潇湘馆 · 林黛玉居所',
   description: '大观园西区，竹林环绕，幽静雅致。林黛玉在此居住，常于此处读书吟诗。',
   background: {
-    day: '/assets/images/backgrounds/xiaoxiang_guan_day.png',
-    night: '/assets/images/backgrounds/xiaoxiang_guan_day.png',
+    day: '/assets/images/backgrounds/xiaoxiang_guan_day.webp',
+    night: '/assets/images/backgrounds/xiaoxiang_guan_day.webp',
   },
   bgm: 'bgm_xiaoxiang',
   ambientSounds: [
@@ -27,8 +27,8 @@ export const yihongYuan: Scene = {
   fullName: '怡红院 · 贾宝玉居所',
   description: '大观园中区，花木繁盛，热闹非凡。贾宝玉在此居住，常有丫鬟陪伴。',
   background: {
-    day: '/assets/images/backgrounds/yihong_yuan_day.png',
-    night: '/assets/images/backgrounds/yihong_yuan_day.png',
+    day: '/assets/images/backgrounds/yihong_yuan_day.webp',
+    night: '/assets/images/backgrounds/yihong_yuan_day.webp',
   },
   bgm: 'bgm_yihong',
   ambientSounds: [
@@ -46,8 +46,8 @@ export const hengwuYuan: Scene = {
   fullName: '蘅芜苑 · 薛宝钗居所',
   description: '大观园东区，香草满园，清幽雅致。薛宝钗在此居住，常于此处读书绣花。',
   background: {
-    day: '/assets/images/backgrounds/hengwu_yuan_day.png',
-    night: '/assets/images/backgrounds/hengwu_yuan_day.png',
+    day: '/assets/images/backgrounds/hengwu_yuan_day.webp',
+    night: '/assets/images/backgrounds/hengwu_yuan_day.webp',
   },
   bgm: 'bgm_hengwu',
   ambientSounds: [
@@ -65,8 +65,8 @@ export const qiushuangZhai: Scene = {
   fullName: '秋爽斋 · 探春居所',
   description: '大观园南区，宽敞明亮，视野开阔。探春在此居住，常于此处处理家务。',
   background: {
-    day: '/assets/images/backgrounds/yihong_yuan_day.png',
-    night: '/assets/images/backgrounds/yihong_yuan_day.png',
+    day: '/assets/images/backgrounds/yihong_yuan_day.webp',
+    night: '/assets/images/backgrounds/yihong_yuan_day.webp',
   },
   bgm: 'bgm_qiushuang',
   ambientSounds: [],
@@ -82,8 +82,8 @@ export const ruiguan: Scene = {
   fullName: '荣庆堂 · 荣国府正堂',
   description: '荣国府主建筑，庄严肃穆，用于家宴祭祀、请安等重要场合。',
   background: {
-    day: '/assets/images/backgrounds/daguanyuan_full.png',
-    night: '/assets/images/backgrounds/daguanyuan_full.png',
+    day: '/assets/images/backgrounds/daguanyuan_full.webp',
+    night: '/assets/images/backgrounds/daguanyuan_full.webp',
   },
   bgm: 'bgm_main_hall',
   ambientSounds: [],
@@ -99,8 +99,8 @@ export const huazhong: Scene = {
   fullName: '花冢 · 大观园角落',
   description: '大观园偏僻角落，花落之处。黛玉常于此处葬花吟诗。',
   background: {
-    day: '/assets/images/backgrounds/xiaoxiang_guan_day.png',
-    night: '/assets/images/backgrounds/xiaoxiang_guan_day.png',
+    day: '/assets/images/backgrounds/xiaoxiang_guan_day.webp',
+    night: '/assets/images/backgrounds/xiaoxiang_guan_day.webp',
   },
   bgm: 'bgm_sad',
   ambientSounds: [
@@ -118,8 +118,8 @@ export const ouxiangXie: Scene = {
   fullName: '藕香榭 · 水上亭榭',
   description: '大观园水域，荷花环绕，风景秀丽。中秋诗会常于此处举办。',
   background: {
-    day: '/assets/images/backgrounds/daguanyuan_full.png',
-    night: '/assets/images/backgrounds/daguanyuan_full.png',
+    day: '/assets/images/backgrounds/daguanyuan_full.webp',
+    night: '/assets/images/backgrounds/daguanyuan_full.webp',
   },
   bgm: 'bgm_poetry',
   ambientSounds: [

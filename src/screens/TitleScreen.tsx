@@ -28,7 +28,7 @@ const TitleScreen: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/assets/images/backgrounds/daguanyuan_full.png")',
+          backgroundImage: 'url("/assets/images/backgrounds/daguanyuan_full.webp")',
           filter: 'blur(2px)',
         }}
       />

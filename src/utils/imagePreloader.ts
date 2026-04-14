@@ -32,10 +32,10 @@ class ImagePreloader {
     
     // 背景图片
     const backgrounds = [
-      '/assets/images/backgrounds/daguanyuan_full.png',
-      '/assets/images/backgrounds/xiaoxiang_guan_day.png',
-      '/assets/images/backgrounds/yihong_yuan_day.png',
-      '/assets/images/backgrounds/hengwu_yuan_day.png',
+      '/assets/images/backgrounds/daguanyuan_full.webp',
+      '/assets/images/backgrounds/xiaoxiang_guan_day.webp',
+      '/assets/images/backgrounds/yihong_yuan_day.webp',
+      '/assets/images/backgrounds/hengwu_yuan_day.webp',
     ]
     paths.push(...backgrounds)
     
@@ -47,14 +47,14 @@ class ImagePreloader {
     
     characters.forEach(char => {
       expressions.forEach(expr => {
-        paths.push(`/assets/images/characters/${char}_${expr}.png`)
+        paths.push(`/assets/images/characters/${char}_${expr}.webp`)
       })
     })
     
     // 只加载存在的图片（normal 表情肯定存在）
     const existingPaths: string[] = []
     characters.forEach(char => {
-      existingPaths.push(`/assets/images/characters/${char}_normal.png`)
+      existingPaths.push(`/assets/images/characters/${char}_normal.webp`)
     })
     
     return [...backgrounds, ...existingPaths]
