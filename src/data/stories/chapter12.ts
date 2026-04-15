@@ -24,6 +24,7 @@ const chapter12EndingCondition: StoryNode = {
   type: 'condition',
   chapter: 12,
   sceneId: 'xiaoxiang_guan',
+  content: [{ text: '' }],
   conditionalBranches: [
     {
       // 极高好感度 + 曾与黛玉倾诉心事

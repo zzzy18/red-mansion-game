@@ -24,6 +24,7 @@ const chapter13EndingBranch: StoryNode = {
   type: 'condition',
   chapter: 13,
   sceneId: 'rong_qing_tang',
+  content: [{ text: '' }],
   conditionalBranches: [
     // 圆满结局：高好感度 + 真心表白 + 最后相见
     {
@@ -50,6 +51,7 @@ const chapter13EndingHappyCondition: StoryNode = {
   type: 'condition',
   chapter: 13,
   sceneId: 'yihong_yuan',
+  content: [{ text: '' }],
   conditionalBranches: [
     {
       condition: { type: 'flag', target: 'true_love_confirmed', value: true },

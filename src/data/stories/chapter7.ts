@@ -112,6 +112,7 @@ const chapter7DaiyuReactionCondition: StoryNode = {
   type: 'condition',
   chapter: 7,
   sceneId: 'xiaoxiang_guan',
+  content: [{ text: '' }],
   conditionalBranches: [
     {
       condition: { type: 'relation', target: 'daiyu', operator: '>', value: 85 },
@@ -274,6 +275,7 @@ const chapter7DaiyuFinalCondition: StoryNode = {
   type: 'condition',
   chapter: 7,
   sceneId: 'xiaoxiang_guan',
+  content: [{ text: '' }],
   conditionalBranches: [
     {
       condition: { type: 'relation', target: 'daiyu', operator: '>', value: 90 },
