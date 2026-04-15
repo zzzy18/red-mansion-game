@@ -233,6 +233,117 @@ export const tanchun: Character = {
   ],
 }
 
+// 贾政（新增）
+export const jiazheng: Character = {
+  id: CHARACTER_IDS.JIAZHENG,
+  name: '贾政',
+  title: '荣国府老爷',
+  description: '荣国府当家人，贾宝玉之父。封建家长的典型代表，严守礼教，期望儿子走科举之路。对宝玉的"不肖"行为极度不满。',
+  portrait: {
+    normal: '/assets/images/characters/jiazheng_normal.webp',
+    happy: '/assets/images/characters/jiazheng_normal.webp',
+    sad: '/assets/images/characters/jiazheng_normal.webp',
+    angry: '/assets/images/characters/jiazheng_normal.webp',
+    surprised: '/assets/images/characters/jiazheng_normal.webp',
+    shy: '/assets/images/characters/jiazheng_normal.webp',
+    thinking: '/assets/images/characters/jiazheng_normal.webp',
+  },
+  avatar: '/assets/images/characters/jiazheng_normal.webp',
+  stats: {
+    beauty: 60,
+    talent: 70,
+    health: 70,
+    fortune: 50,
+    reputation: 90,
+  },
+  skills: {
+    poetry: 60,
+    needlework: 0,
+    music: 30,
+    management: 80,
+    medicine: 20,
+  },
+  storylines: ['main_jiazheng', 'authority', 'tradition'],
+  relationships: [
+    { targetId: CHARACTER_IDS.BAOYU, initialValue: 20, description: '父子，期望与失望' },
+  ],
+}
+
+// 贾母（新增）
+export const jiamu: Character = {
+  id: CHARACTER_IDS.JIAMU,
+  name: '贾母',
+  title: '史太君',
+  description: '贾府最高权威，贾宝玉祖母。疼爱宝玉、黛玉等孙辈，是他们的保护者。虽溺爱宝玉，却也维护着家族的体面。',
+  portrait: {
+    normal: '/assets/images/characters/jiamu_normal.webp',
+    happy: '/assets/images/characters/jiamu_normal.webp',
+    sad: '/assets/images/characters/jiamu_normal.webp',
+    angry: '/assets/images/characters/jiamu_normal.webp',
+    surprised: '/assets/images/characters/jiamu_normal.webp',
+    shy: '/assets/images/characters/jiamu_normal.webp',
+    thinking: '/assets/images/characters/jiamu_normal.webp',
+  },
+  avatar: '/assets/images/characters/jiamu_normal.webp',
+  stats: {
+    beauty: 50,
+    talent: 60,
+    health: 60,
+    fortune: 80,
+    reputation: 100,
+  },
+  skills: {
+    poetry: 40,
+    needlework: 30,
+    music: 50,
+    management: 70,
+    medicine: 30,
+  },
+  storylines: ['main_jiamu', 'protection', 'authority'],
+  relationships: [
+    { targetId: CHARACTER_IDS.BAOYU, initialValue: 100, description: '祖母疼爱孙儿' },
+    { targetId: CHARACTER_IDS.DAIYU, initialValue: 95, description: '外祖母疼爱外孙女' },
+  ],
+}
+
+// 王夫人（新增）
+export const wangfuren: Character = {
+  id: CHARACTER_IDS.WANGFUREN,
+  name: '王夫人',
+  title: '荣国府太太',
+  description: '贾宝玉之母，贾政之妻。虽为宝玉生母，却对宝玉的行为多有不满。支持"金玉良缘"，促成宝玉与宝钗的婚姻。',
+  portrait: {
+    normal: '/assets/images/characters/wangfuren_normal.webp',
+    happy: '/assets/images/characters/wangfuren_normal.webp',
+    sad: '/assets/images/characters/wangfuren_normal.webp',
+    angry: '/assets/images/characters/wangfuren_normal.webp',
+    surprised: '/assets/images/characters/wangfuren_normal.webp',
+    shy: '/assets/images/characters/wangfuren_normal.webp',
+    thinking: '/assets/images/characters/wangfuren_normal.webp',
+  },
+  avatar: '/assets/images/characters/wangfuren_normal.webp',
+  stats: {
+    beauty: 55,
+    talent: 50,
+    health: 75,
+    fortune: 60,
+    reputation: 80,
+  },
+  skills: {
+    poetry: 30,
+    needlework: 40,
+    music: 30,
+    management: 60,
+    medicine: 40,
+  },
+  storylines: ['main_wangfuren', 'mother', 'marriage'],
+  relationships: [
+    { targetId: CHARACTER_IDS.BAOYU, initialValue: 50, description: '母子，期望与担忧' },
+    { targetId: CHARACTER_IDS.DAIYU, initialValue: 10, description: '不喜黛玉，促成金玉' },
+    { targetId: CHARACTER_IDS.BAOCHAI, initialValue: 80, description: '支持宝钗，金玉良缘' },
+  ],
+}
+
 // 导出所有角色
 export const characters: Character[] = [
   baoyu,
@@ -241,6 +352,9 @@ export const characters: Character[] = [
   xifeng,
   xiangyun,
   tanchun,
+  jiazheng,
+  jiamu,
+  wangfuren,
 ]
 
 // 根据ID获取角色

@@ -13,7 +13,7 @@ import { GameMenu } from '../components/menu/GameMenu'
 import { StoryNode, StoryContent } from '../types'
 import { Branch } from '../types/story'
 import { characters } from '../data/characters'
-import { getStoryNode, getNextNode } from '../data/stories/storyManager'
+import { getStoryNode, getNextNode, checkCondition } from '../data/stories/storyManager'
 import { getSceneById } from '../data/scenes'
 
 const GameScreen: React.FC = () => {
@@ -354,7 +354,15 @@ const GameScreen: React.FC = () => {
       <AnimatePresence>
         {showChoices && currentNode?.branches && (
           <ChoicePanel
-            branches={currentNode.branches}
+            branches={currentNode.branches.filter(branch => {
+              // 过滤不满足条件的选项
+              if (!branch.condition) return true
+              return checkCondition(branch.condition, {
+                storyFlags: gameStore.storyFlags,
+                characterStats: gameStore.characterStats,
+                relationships: gameStore.relationships,
+              })
+            })}
             onSelect={handleChoice}
           />
         )}

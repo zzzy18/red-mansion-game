@@ -56,6 +56,9 @@ export const CHARACTER_IDS = {
   XIFENG: 'xifeng',
   XIANGYUN: 'xiangyun',
   TANCHUN: 'tanchun',
+  JIAZHENG: 'jiazheng',
+  JIAMU: 'jiamu',
+  WANGFUREN: 'wangfuren',
 } as const
 
 export type CharacterId = typeof CHARACTER_IDS[keyof typeof CHARACTER_IDS]

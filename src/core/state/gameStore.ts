@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { GameState, GamePhase } from '../../types'
+import { getCharacterById } from '../../data/characters'
 
 interface GameActions {
   // 游戏流程控制
@@ -86,11 +87,36 @@ export const useGameStore = create<GameState & GameActions>((set, get) => ({
   setPhase: (phase) => set({ phase }),
   setLoading: (loading) => set({ isLoading: loading }),
   
-  // 角色选择
-  selectCharacter: (characterId) => set({
-    currentCharacterId: characterId,
-    phase: 'playing',
-  }),
+  // 角色选择 - 初始化属性和关系
+  selectCharacter: (characterId) => {
+    const character = getCharacterById(characterId)
+    if (!character) return
+
+    // 初始化角色属性
+    const characterStats: Record<string, number> = {
+      beauty: character.stats.beauty,
+      talent: character.stats.talent,
+      health: character.stats.health,
+      fortune: character.stats.fortune,
+      reputation: character.stats.reputation,
+    }
+
+    // 初始化角色关系（好感度）
+    const relationships: Record<string, number> = {}
+    character.relationships.forEach(r => {
+      relationships[r.targetId] = r.initialValue
+    })
+
+    set({
+      currentCharacterId: characterId,
+      characterStats,
+      relationships,
+      phase: 'playing',
+    })
+
+    // 设置角色身份标志
+    get().setFlag(`character_${characterId}`, true)
+  },
   
   // 剧情控制
   setCurrentNode: (nodeId) => set({ currentNodeId: nodeId }),

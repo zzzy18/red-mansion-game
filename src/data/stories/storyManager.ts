@@ -69,7 +69,7 @@ export function getNextNode(
 }
 
 // 检查条件
-function checkCondition(
+export function checkCondition(
   condition: {
     type: string
     target?: string
