@@ -1,4 +1,4 @@
-import { StoryNode, StoryChapter, Condition, Effect } from '../../types'
+import { StoryNode, StoryChapter } from '../../types'
 
 // 第七章：共读西厢（第二十三回）
 // 主题：宝玉黛玉共读《西厢记》，情感升温
