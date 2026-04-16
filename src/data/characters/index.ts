@@ -233,22 +233,22 @@ export const tanchun: Character = {
   ],
 }
 
-// 贾政（新增）
+// 贾政（新增）- 使用宝玉图片作为临时占位符
 export const jiazheng: Character = {
   id: CHARACTER_IDS.JIAZHENG,
   name: '贾政',
   title: '荣国府老爷',
   description: '荣国府当家人，贾宝玉之父。封建家长的典型代表，严守礼教，期望儿子走科举之路。对宝玉的"不肖"行为极度不满。',
   portrait: {
-    normal: '/assets/images/characters/jiazheng_normal.webp',
-    happy: '/assets/images/characters/jiazheng_normal.webp',
-    sad: '/assets/images/characters/jiazheng_normal.webp',
-    angry: '/assets/images/characters/jiazheng_normal.webp',
-    surprised: '/assets/images/characters/jiazheng_normal.webp',
-    shy: '/assets/images/characters/jiazheng_normal.webp',
-    thinking: '/assets/images/characters/jiazheng_normal.webp',
+    normal: '/assets/images/characters/baoyu_normal.webp',
+    happy: '/assets/images/characters/baoyu_normal.webp',
+    sad: '/assets/images/characters/baoyu_normal.webp',
+    angry: '/assets/images/characters/baoyu_normal.webp',
+    surprised: '/assets/images/characters/baoyu_normal.webp',
+    shy: '/assets/images/characters/baoyu_normal.webp',
+    thinking: '/assets/images/characters/baoyu_normal.webp',
   },
-  avatar: '/assets/images/characters/jiazheng_normal.webp',
+  avatar: '/assets/images/characters/baoyu_normal.webp',
   stats: {
     beauty: 60,
     talent: 70,
